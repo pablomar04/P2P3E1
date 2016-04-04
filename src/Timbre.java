@@ -1,7 +1,7 @@
 
 public class Timbre {
-	String nombre="Chicharra";
-	boolean encendido=false;
+	public String nombre="Chicharra";
+	public boolean encendido=false;
 
 	public Timbre(String nombre, boolean enc) {
 		super();

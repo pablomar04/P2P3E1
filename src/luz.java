@@ -1,7 +1,7 @@
 
 public class luz {
-	String nombre = "Luz";
-	boolean encendida=false;
+	public String nombre = "Luz";
+	public boolean encendida=false;
 	
 	public luz(String nombre, boolean encendida) {
 		super();
