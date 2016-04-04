@@ -11,7 +11,7 @@ public class luz {
 	
 	public void encender(){
 		this.encendida=true;
-		System.out.println("");
+		System.out.println("Se encendió la luz");
 		
 	}
 	

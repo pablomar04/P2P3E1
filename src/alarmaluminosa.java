@@ -8,7 +8,18 @@ public class alarmaluminosa extends alarma{
 		this.luzalarma = luzalarma;
 	}
 
-	
+	public boolean comprobar(){
+		
+		if((vidrio)||(puertaventana)||(movimiento)){
+			timbre.hacerSonar();
+			luzalarma.encender();
+			return true;
+			
+		}else{
+			return false;
+		}
+		
+	}
 	
 	
 
