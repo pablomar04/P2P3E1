@@ -9,8 +9,8 @@ public class programa {
 	//	alarmaluminosa a1 = new alarmaluminosa(true,false,false,t1,l1);
 		sensor s1 = new sensor (false,"habitacion 1","vidrio");
 		sensor s2 = new sensor (false,"habitacion 2","vidrio");
-		sensor s3 = new sensor (true,"comedor","movimiento");
-		sensor s4 = new sensor (true,"cocina","abertura");
+		sensor s3 = new sensor (false,"comedor","movimiento");
+		sensor s4 = new sensor (false,"cocina","abertura");
 		Vector <sensor> sensores= new Vector<sensor>();
 		
 		sensores.add(s1);
@@ -18,9 +18,10 @@ public class programa {
 		sensores.add(s3);
 		sensores.add(s4);
 		
-		alarmasensores a1 = new alarmasensores(sensores, t1, l1);
-	
-		a1.comprobar();
+		//alarmasensores a1 = new alarmasensores(sensores, t1, l1);
+		Telefono tel = new Telefono(1552);
+		alarmatel a1 = new alarmatel(sensores, t1, l1,tel);
+		a1.verEstado();
 	}
 
 }
